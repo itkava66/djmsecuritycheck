@@ -2,7 +2,7 @@
 
 if (PHP_SAPI != 'cli') {
     if (ini_get('register_globals')) {
-        die("Error: register_globals is on\n");
+        die("Error: register_globals is off\n");
     } elseif (ini_get('magic_quotes_gpc')) {
         die("Error: magic_quotes_gpc is on\n");
     } elseif (ini_get('magic_quotes_runtime')) {
